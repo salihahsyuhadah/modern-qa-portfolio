@@ -1,13 +1,13 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { 
-  ClipboardCheck, 
-  Code2, 
-  Globe, 
-  GitBranch, 
-  Smartphone, 
-  Eye 
+import {
+  ClipboardCheck,
+  Code2,
+  Globe,
+  GitBranch,
+  BarChart3,
+  Container
 } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -15,33 +15,33 @@ gsap.registerPlugin(ScrollTrigger);
 const skills = [
   {
     icon: ClipboardCheck,
-    title: 'Test Design',
-    description: 'Exploratory, boundary, risk-based testing methodologies'
+    title: 'Testing & QA',
+    description: 'Playwright, Cypress, E2E Testing, API Testing, Manual Testing, Test Case Design'
+  },
+  {
+    icon: BarChart3,
+    title: 'Power Platform',
+    description: 'Power Apps, Power BI, Power Automate, SharePoint'
   },
   {
     icon: Code2,
-    title: 'Automation',
-    description: 'Playwright, Cypress, Selenium, TypeScript'
+    title: 'Languages & Frontend',
+    description: 'TypeScript, JavaScript, SQL, PHP, Python, HTML/CSS'
+  },
+  {
+    icon: Container,
+    title: 'Infrastructure & Tools',
+    description: 'Docker, PostgreSQL, Git/GitHub, Next.js, Oracle DB, Freshdesk'
   },
   {
     icon: Globe,
-    title: 'API Testing',
-    description: 'Postman, REST Assured, contract tests'
+    title: 'Integration Testing',
+    description: 'Curlec FPX payment, multi-courier shipping, Shopee & TikTok marketplace'
   },
   {
     icon: GitBranch,
-    title: 'CI/CD',
-    description: 'GitHub Actions, GitLab CI, Docker, Kubernetes'
-  },
-  {
-    icon: Smartphone,
-    title: 'Mobile',
-    description: 'Appium, device farm testing, iOS/Android'
-  },
-  {
-    icon: Eye,
-    title: 'Observability',
-    description: 'Logging, tracing, error alerting, monitoring'
+    title: 'System Testing',
+    description: 'RBAC enforcement, order lifecycle, returns/refund state machine, webhook tracking'
   }
 ];
 

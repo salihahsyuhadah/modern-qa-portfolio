@@ -5,10 +5,10 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const metrics = [
-  { value: 12400, suffix: '+', label: 'Test cases executed' },
-  { value: 3800, suffix: '+', label: 'Bugs found & triaged' },
-  { value: 85, suffix: '%', label: 'Automation coverage (critical paths)' },
-  { value: 40, suffix: '%', label: 'Avg. regression time reduction' }
+  { value: 29, suffix: '', label: 'Playwright test files' },
+  { value: 4600, suffix: '+', label: 'Lines of test code' },
+  { value: 10, suffix: '', label: 'Service domains tested' },
+  { value: 50, suffix: '+', label: 'Power BI dashboards deployed' }
 ];
 
 function AnimatedCounter({ value, suffix }: { value: number; suffix: string }) {

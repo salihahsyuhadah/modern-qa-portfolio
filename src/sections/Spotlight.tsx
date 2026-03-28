@@ -6,9 +6,9 @@ import { ArrowRight, Check } from 'lucide-react';
 gsap.registerPlugin(ScrollTrigger);
 
 const highlights = [
-  '90%+ critical path automation',
-  'Contract tests between 6 services',
-  'P95 load time under 1.2s'
+  'End-to-end checkout flow from cart to payment',
+  'Razorpay online banking payment integration',
+  'API monitoring via browser dev tools'
 ];
 
 export default function Spotlight() {
@@ -123,12 +123,14 @@ export default function Spotlight() {
           {/* Content Block */}
           <div ref={contentRef}>
             <h2 className="text-[clamp(34px,3.6vw,56px)] font-bold text-[#F2F5F9] mb-6 leading-tight">
-              Healthcare Appointment Platform
+              Desa Murni Batik E-Commerce
             </h2>
-            
+
             <p className="text-[#A6AFBA] text-lg leading-relaxed mb-8 max-w-lg">
-              A multi-role booking system with complex scheduling rules. I built a test pyramid 
-              that keeps critical paths stable—unit → integration → E2E—plus contract tests between services.
+              Investigated and resolved user-reported issues on the e-commerce platform. Validated
+              pricing calculations, verified courier options at checkout, and ensured Razorpay payment
+              triggers correctly. Collaborated with the team to improve system performance and ensure
+              a smooth, error-free shopping experience.
             </p>
 
             {/* Highlights List */}

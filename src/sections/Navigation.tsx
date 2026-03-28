@@ -49,7 +49,7 @@ export default function Navigation() {
             }}
             className="font-mono text-sm font-medium text-[#F2F5F9] tracking-wider hover:text-[#2D6BFF] transition-colors"
           >
-            QA//PORTFOLIO
+            SALIHAH//QA
           </a>
 
           {/* Desktop Nav */}

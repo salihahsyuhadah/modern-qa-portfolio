@@ -6,22 +6,22 @@ gsap.registerPlugin(ScrollTrigger);
 
 const experiences = [
   {
-    role: 'Senior QA Engineer',
-    company: 'HealthTech Co.',
-    period: '2022–Present',
-    description: 'Own test strategy for a patient booking platform. Built E2E suites and service-level contract tests.'
+    role: 'IT Support',
+    company: 'Desa Murni Batik',
+    period: 'Jan 2026 – Present',
+    description: 'Investigated and resolved user-reported issues on the e-commerce platform. Performed testing to ensure features function correctly after fixes. Supported end-to-end checkout flow, validated pricing calculations, verified courier options, and ensured Razorpay payment integration. Monitored API responses via browser tools to ensure correct data flow.'
   },
   {
-    role: 'QA Engineer',
-    company: 'FinScale',
-    period: '2019–2022',
-    description: 'Led automation for payment flows. Reduced regression cycle from 5 days to 1.5 days.'
+    role: 'IT Gees',
+    company: 'PETRONAS Chemicals Derivatives Sdn Bhd',
+    period: 'Aug 2024 – Jul 2025',
+    description: 'Provided IT support for a Power Apps-based Action Item website integrated with SharePoint. Monitored workflows in Power Automate. Developed a Power BI app to integrate 50+ company dashboards into a single unified platform. Built interactive visualizations, KPI trackers, and drill-down features for executive decision-making.'
   },
   {
-    role: 'Junior QA / Automation',
-    company: 'ShopNext',
-    period: '2017–2019',
-    description: 'Introduced API testing and CI gates. Improved release confidence for the logistics module.'
+    role: 'QA Analyst Internship',
+    company: 'Finexus Group',
+    period: 'Jul 2023 – Jan 2024',
+    description: 'Wrote test cases for the Paymaster system — defining objectives, test steps, input values, and expected outcomes. Performed testing on filter, search, sorting, export, view, edit, and delete functions. Wrote automation tests for GoBiz using VS Code, Node.js, and Cypress. Reported bugs with structured format and documented test results.'
   }
 ];
 

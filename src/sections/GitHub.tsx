@@ -6,25 +6,26 @@ import { Button } from '@/components/ui/button';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const codeSnippet = `test('checkout completes', async ({ page }) => {
-  await page.goto('/cart');
-  
-  // Add item to cart
-  await page.click('[data-testid="add-to-cart"]');
-  await expect(page.locator('.cart-count'))
-    .toHaveText('1');
-  
-  // Proceed to checkout
-  await page.click('[data-testid="checkout"]');
-  await page.fill('[name="email"]', 'test@example.com');
-  
-  // Complete payment
-  await page.fill('[name="card"]', '4242424242424242');
-  await page.click('[data-testid="pay"]');
-  
-  // Verify success
-  await expect(page.locator('.success-message'))
-    .toBeVisible();
+const codeSnippet = `describe('GoBiz Payment Report', () => {
+  it('should filter and sort yearly report', () => {
+    cy.visit('/web/payment-report/yearly');
+
+    // Login to the system
+    cy.get('#username').type('admin@test.com');
+    cy.get('#password').type('ADMIN1234');
+    cy.get('button').contains('LOG IN').click();
+    cy.wait(3000);
+
+    // Navigate to Payment Report
+    cy.get('[data-testid="menu"]').click();
+    cy.contains('Payment Report').click();
+    cy.contains('Yearly').click();
+
+    // Test filter and search
+    cy.get('[data-testid="filter"]').click();
+    cy.get('[data-testid="search"]').type('2024');
+    cy.get('table').should('be.visible');
+  });
 });`;
 
 export default function GitHubSection() {
@@ -106,7 +107,7 @@ export default function GitHubSection() {
         <div className="flex items-center justify-between px-6 py-4 border-b border-[rgba(242,245,249,0.08)]">
           <div className="flex items-center gap-2">
             <Code2 className="w-5 h-5 text-[#2D6BFF]" />
-            <span className="text-[#F2F5F9] font-medium text-sm">checkout.spec.ts</span>
+            <span className="text-[#F2F5F9] font-medium text-sm">gobiz-payment.spec.cy.ts</span>
           </div>
           <div className="flex gap-1.5">
             <div className="w-3 h-3 rounded-full bg-[#FF5F56]" />
@@ -142,7 +143,7 @@ export default function GitHubSection() {
         {/* Card Footer */}
         <div className="px-6 py-3 border-t border-[rgba(242,245,249,0.08)] flex items-center justify-between">
           <span className="text-xs text-[#A6AFBA]">TypeScript</span>
-          <span className="text-xs text-[#A6AFBA]">Playwright</span>
+          <span className="text-xs text-[#A6AFBA]">Cypress</span>
         </div>
       </div>
 
@@ -176,7 +177,7 @@ export default function GitHubSection() {
         <div className="flex items-center gap-4">
           <Button 
             className="bg-[#2D6BFF] hover:bg-[#1E5AEE] text-white px-5 py-5 rounded-xl font-medium transition-all duration-300 hover:shadow-[0_0_30px_rgba(45,107,255,0.4)]"
-            onClick={() => window.open('https://github.com', '_blank')}
+            onClick={() => window.open('https://github.com/salihahsyuhadah', '_blank')}
           >
             <Github className="w-4 h-4 mr-2" />
             View GitHub
@@ -184,7 +185,7 @@ export default function GitHubSection() {
           <Button 
             variant="outline"
             className="border-[rgba(242,245,249,0.15)] text-[#F2F5F9] hover:bg-[rgba(242,245,249,0.05)] px-5 py-5 rounded-xl font-medium transition-all duration-300"
-            onClick={() => window.open('https://github.com', '_blank')}
+            onClick={() => window.open('https://github.com/salihahsyuhadah', '_blank')}
           >
             <ExternalLink className="w-4 h-4 mr-2" />
             Browse scripts

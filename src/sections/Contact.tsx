@@ -1,16 +1,15 @@
 import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Mail, MapPin, Linkedin, Github, Twitter, Copy, Check, Download } from 'lucide-react';
+import { Mail, MapPin, Linkedin, Github, Copy, Check, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { toast } from 'sonner';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const socialLinks = [
-  { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com' },
-  { icon: Github, label: 'GitHub', href: 'https://github.com' },
-  { icon: Twitter, label: 'Twitter/X', href: 'https://twitter.com' }
+  { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/salihah-syuhadah-4a616a270/' },
+  { icon: Github, label: 'GitHub', href: 'https://github.com/salihahsyuhadah' },
 ];
 
 export default function Contact() {
@@ -69,7 +68,7 @@ export default function Contact() {
   }, []);
 
   const copyEmail = () => {
-    navigator.clipboard.writeText('hello@qaengineer.dev');
+    navigator.clipboard.writeText('salsyhdh@gmail.com');
     setCopied(true);
     toast.success('Email copied to clipboard!');
     setTimeout(() => setCopied(false), 2000);
@@ -102,7 +101,7 @@ export default function Contact() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button 
             className="bg-[#2D6BFF] hover:bg-[#1E5AEE] text-white px-8 py-6 rounded-xl font-medium transition-all duration-300 hover:shadow-[0_0_30px_rgba(45,107,255,0.4)] w-full sm:w-auto"
-            onClick={() => window.location.href = 'mailto:hello@qaengineer.dev'}
+            onClick={() => window.location.href = 'mailto:salsyhdh@gmail.com'}
           >
             <Mail className="w-5 h-5 mr-2" />
             Send an email
@@ -139,13 +138,13 @@ export default function Contact() {
           className="footer-link inline-flex items-center gap-2 text-[#A6AFBA] hover:text-[#F2F5F9] transition-colors"
         >
           <Mail className="w-4 h-4" />
-          <span className="font-mono text-sm">hello@qaengineer.dev</span>
+          <span className="font-mono text-sm">salsyhdh@gmail.com</span>
         </a>
 
         {/* Location */}
         <div className="footer-link inline-flex items-center gap-2 text-[#A6AFBA]">
           <MapPin className="w-4 h-4" />
-          <span className="font-mono text-sm">Remote / UTC±3</span>
+          <span className="font-mono text-sm">Kuala Terengganu, Terengganu · Willing to relocate</span>
         </div>
 
         {/* Social Links */}
@@ -171,7 +170,7 @@ export default function Contact() {
       {/* Copyright */}
       <div className="mt-16 text-center">
         <p className="text-[#4A4A4A] text-sm font-mono">
-          © {new Date().getFullYear()} QA Engineer Portfolio. Built with precision.
+          © {new Date().getFullYear()} Salihah Syuhadah. Built with precision.
         </p>
       </div>
     </section>

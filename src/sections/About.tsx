@@ -6,9 +6,9 @@ import { Check, ArrowRight } from 'lucide-react';
 gsap.registerPlugin(ScrollTrigger);
 
 const credentials = [
-  '6+ years in QA',
-  'Automation-first mindset',
-  'CI/CD & observability'
+  'BSc Computer Science (Software Engineering)',
+  'E-Commerce platform troubleshooting & testing',
+  '50+ Power BI dashboards at PETRONAS'
 ];
 
 export default function About() {
@@ -97,17 +97,18 @@ export default function About() {
         ref={cardRef}
         className="absolute left-[6vw] top-[10vh] w-[88vw] h-[80vh] glass-card overflow-hidden flex"
       >
-        {/* Left Image */}
-        <div 
+        {/* Left Image - Passport Photo */}
+        <div
           ref={imageRef}
-          className="w-[44%] h-full relative"
+          className="w-[44%] h-full relative flex items-center justify-center bg-[#0E1116]"
         >
-          <img 
-            src="/about_portrait.jpg" 
-            alt="About Portrait"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0E1116] opacity-40" />
+          <div className="relative" style={{ width: '315px', height: '405px' }}>
+            <img
+              src="/about_portrait.jpg"
+              alt="Salihah Syuhadah"
+              className="w-full h-full object-cover rounded-lg border-2 border-[rgba(45,107,255,0.4)] shadow-[0_0_30px_rgba(45,107,255,0.15)]"
+            />
+          </div>
         </div>
 
         {/* Right Content */}
@@ -120,11 +121,12 @@ export default function About() {
             <h2 className="text-[clamp(34px,3.6vw,56px)] font-bold text-[#F2F5F9] mb-6 leading-tight">
               I break things so your users don't.
             </h2>
-            
+
             <p className="text-[#A6AFBA] text-lg leading-relaxed mb-8 max-w-xl">
-              I'm a QA Engineer with a background in software engineering. I specialize in building 
-              test strategies that catch issues early, automate the repetitive, and keep releases calm. 
-              I've worked with startups and scale-ups—shipping stable products across web, mobile, and APIs.
+              I am an IT Support professional with experience in troubleshooting systems, supporting
+              e-commerce platforms, and managing Power Platform applications. With a strong foundation
+              in software testing and system validation, I ensure smooth system operations and a reliable
+              user experience.
             </p>
 
             {/* Credentials List */}

@@ -123,17 +123,17 @@ export default function Hero() {
       />
       
       {/* Portrait Image */}
-      <div 
+      <div
         ref={imageRef}
-        className="absolute right-[6vw] top-[10vh] w-[46vw] h-[80vh] overflow-hidden"
+        className="absolute right-[14vw] top-[15vh] flex items-center justify-center"
       >
-        <img 
-          src="/hero_portrait.jpg" 
-          alt="QA Engineer Portrait"
-          className="w-full h-full object-cover"
-        />
-        {/* Gradient overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#07080A] via-transparent to-transparent opacity-60" />
+        <div className="w-[280px] h-[360px] rounded-xl overflow-hidden border-2 border-[rgba(45,107,255,0.4)] shadow-[0_0_40px_rgba(45,107,255,0.2)]">
+          <img
+            src="/hero_portrait.jpg"
+            alt="Salihah Syuhadah"
+            className="w-full h-full object-cover"
+          />
+        </div>
       </div>
 
       {/* Meta Label */}
@@ -141,7 +141,7 @@ export default function Hero() {
         ref={metaRef}
         className="absolute left-[12vw] top-[16vh]"
       >
-        <span className="label-mono text-[#2D6BFF]">Quality Assurance Engineer</span>
+        <span className="label-mono text-[#2D6BFF]">IT Support & QA Tester</span>
       </div>
 
       {/* Content Block */}
@@ -150,10 +150,10 @@ export default function Hero() {
         className="absolute left-[12vw] top-[26vh] w-[34vw]"
       >
         <h1 className="text-[clamp(44px,5vw,76px)] font-bold text-[#F2F5F9] leading-[0.95] mb-6">
-          Precision in every pixel.
+          Salihah Syuhadah
         </h1>
         <p className="text-lg text-[#A6AFBA] leading-relaxed max-w-md">
-          Manual testing • Automation • CI/CD • Performance
+          E-Commerce • Microservices • Playwright • Power Platform
         </p>
       </div>
 
@@ -179,7 +179,7 @@ export default function Hero() {
         <Button 
           variant="ghost"
           className="text-[#A6AFBA] hover:text-[#F2F5F9] hover:bg-transparent"
-          onClick={() => window.open('https://github.com', '_blank')}
+          onClick={() => window.open('https://github.com/salihahsyuhadah', '_blank')}
         >
           <Github className="w-5 h-5" />
         </Button>
